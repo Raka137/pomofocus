@@ -1,0 +1,140 @@
+.tasks-container {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 20px;
+  color: white;
+  padding: 0 15px; /* Tambahkan padding agar tidak menempel di sisi layar kecil */
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  opacity: 0.8;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 15px 0;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  background-color: white;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-left: 5px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.task-item.active {
+  border-left: 5px solid #333;
+  font-weight: bold;
+}
+
+.task-name {
+  flex-grow: 1;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.task-pomos {
+  font-size: 16px;
+  color: #888;
+}
+
+.delete-task-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 5px;
+  transition: color 0.2s ease;
+}
+
+.delete-task-btn:hover {
+  color: #333;
+}
+
+.add-task-btn {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.task-form {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.task-form input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 10px 0;
+  outline: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel-btn {
+  background-color: #efefef;
+  color: #555;
+}
+
+.save-btn {
+  background-color: #333;
+  color: white;
+}

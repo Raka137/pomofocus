@@ -18,17 +18,17 @@ body {
   align-items: center;
   min-height: 100vh;
   transition: background-color 0.5s ease;
+  padding-bottom: 40px; /* Memberi sedikit ruang di bawah */
 }
 
-/* === BAGIAN BARU & YANG DIUBAH === */
 .content-wrapper {
-  flex-grow: 1; /* Memberitahu wrapper ini untuk mengambil semua sisa ruang vertikal */
+  flex-grow: 1;
   width: 100%;
-  display: flex; /* Mengaktifkan flexbox di dalam wrapper */
-  align-items: center; /* Memusatkan konten secara horizontal */
-  justify-content: center; /* Memusatkan konten secara vertikal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* <-- TAMBAHKAN BARIS INI */
 }
-/* === AKHIR BAGIAN BARU & YANG DIUBAH === */
 
 /* Tema warna berdasarkan mode */
 .app-container.pomodoro {
@@ -113,4 +113,12 @@ body {
 .start-stop-btn:active {
   transform: translateY(1px);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.active-task-display {
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  height: 25px; /* Beri tinggi agar layout tidak bergeser */
+  text-align: center;
 }
